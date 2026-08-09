@@ -1,0 +1,71 @@
+#!/usr/bin/env bash
+#
+# pre-commit — guard against committing oversized files into the archive.
+#
+# Why this exists: every file in this repository is a scanned PDF. Raw scans run
+# 40-55 MB each, and once one is committed it stays in the git history forever —
+# the only way out is a history rewrite. This hook stops that at the door.
+#
+# What it does: for every file staged for commit, compare its size against the
+# limit. If anything is over, print the offenders and abort the commit.
+#
+# Limits (bytes) can be overridden per clone without editing this file:
+#   git config hooks.maxPdfSize   12582912    # 12 MB
+#   git config hooks.maxFileSize  10485760    # 10 MB
+#
+# To bypass the hook for one commit (use sparingly):
+#   git commit --no-verify
+#
+set -uo pipefail
+
+# Defaults: 8 MB for PDFs, 5 MB for anything else.
+MAX_PDF=$(git config --int hooks.maxPdfSize 2>/dev/null || echo $((8 * 1024 * 1024)))
+MAX_OTHER=$(git config --int hooks.maxFileSize 2>/dev/null || echo $((5 * 1024 * 1024)))
+
+fail=0
+offenders=()
+hints=()
+
+to_mb() { awk -v b="$1" 'BEGIN { printf "%.1f", b / 1048576 }'; }
+
+# --cached  : look at the staging area, not the working tree
+# --diff-filter=ACM : Added, Copied, Modified — ignore deletions and renames
+while IFS= read -r path; do
+  [[ -f "$path" ]] || continue
+
+  size=$(wc -c < "$path" | tr -d ' ')
+
+  # Pick the limit based on the extension.
+  shopt -s nocasematch
+  if [[ "$path" == *.pdf ]]; then
+    limit=$MAX_PDF
+    hint="run ./compress-pdfs.sh then re-stage it"
+  else
+    limit=$MAX_OTHER
+    hint="this repository is for scanned notes — large binaries do not belong in git history"
+  fi
+  shopt -u nocasematch
+
+  if (( size > limit )); then
+    # Store the hint with the path so a mixed batch reports the right fix per file.
+    offenders+=("$(to_mb "$size") MB  (limit $(to_mb "$limit") MB)  $path")
+    hints+=("$hint")
+    fail=1
+  fi
+done < <(git diff --cached --name-only --diff-filter=ACM -z | tr '\0' '\n')
+
+if (( fail )); then
+  echo
+  echo "pre-commit: commit blocked — ${#offenders[@]} file(s) over the size limit"
+  echo
+  for i in "${!offenders[@]}"; do
+    echo "  ${offenders[$i]}"
+    echo "      -> ${hints[$i]}"
+  done
+  echo
+  echo "  Bypass this check once with: git commit --no-verify"
+  echo
+  exit 1
+fi
+
+exit 0
