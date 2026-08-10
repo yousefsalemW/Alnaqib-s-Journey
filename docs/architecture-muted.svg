@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 1000" width="1560" height="1000"
+         font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif">
+      <defs>
+        <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+                orient="auto-start-reverse">
+          <path d="M 0 1 L 9 5 L 0 9 z" fill="#DCE4EA"/>
+        </marker>
+      </defs>
+      <rect width="1560" height="1000" fill="#4E5D67"/>
+      <rect x="600" y="34" width="340" height="58" rx="8" fill="#26333B" stroke="#9BB0BD" stroke-width="2"/>
+  <text x="770.0" y="70.2" text-anchor="middle" font-size="20" font-weight="700" fill="#F2F6F8">Alnaqib&#8217;s Journey</text>
+  <rect x="150" y="158" width="300" height="54" rx="8" fill="#2F5B84" stroke="#8FBEE4" stroke-width="2"/>
+  <text x="300.0" y="191.12" text-anchor="middle" font-size="17" font-weight="700" fill="#EDF4FA">DevOps-Learning</text>
+  <rect x="838" y="158" width="214" height="54" rx="8" fill="#2F5B84" stroke="#8FBEE4" stroke-width="2"/>
+  <text x="945.0" y="191.12" text-anchor="middle" font-size="17" font-weight="700" fill="#EDF4FA">Linux</text>
+  <rect x="1160" y="158" width="300" height="54" rx="8" fill="#2F5B84" stroke="#8FBEE4" stroke-width="2"/>
+  <text x="1310.0" y="191.12" text-anchor="middle" font-size="17" font-weight="700" fill="#EDF4FA">OpenShift</text>
+  <path d="M 770.0 92 V 126" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M 300.0 126 H 1310.0" fill="none" stroke="#DCE4EA" stroke-width="1.8"/>
+  <path d="M 300.0 126 V 158" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <path d="M 945.0 126 V 158" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <path d="M 1310.0 126 V 158" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="46" y="278" width="196" height="52" rx="8" fill="#3F6B4E" stroke="#9CCFAE" stroke-width="2"/>
+  <text x="144.0" y="309.76" text-anchor="middle" font-size="16" font-weight="700" fill="#EDF7F1">1-DevOps</text>
+  <rect x="292" y="278" width="340" height="52" rx="8" fill="#3F6B4E" stroke="#9CCFAE" stroke-width="2"/>
+  <text x="462.0" y="309.4" text-anchor="middle" font-size="15" font-weight="700" fill="#EDF7F1">2-DevOps-Tools-and-Concepts</text>
+  <path d="M 300.0 212 V 248" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M 144.0 248 H 462.0" fill="none" stroke="#DCE4EA" stroke-width="1.8"/>
+  <path d="M 144.0 248 V 278" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <path d="M 462.0 248 V 278" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="60" y="372" width="168" height="46" rx="8" fill="#B7C5D2" stroke="#8A9AA8" stroke-width="1.2"/>
+  <text x="144.0" y="400.4" text-anchor="middle" font-size="15" font-weight="500" fill="#16232E">Intro</text>
+  <path d="M 144.0 330 V 372" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="60" y="446" width="168" height="46" rx="8" fill="#B7C5D2" stroke="#8A9AA8" stroke-width="1.2"/>
+  <text x="144.0" y="474.4" text-anchor="middle" font-size="15" font-weight="500" fill="#16232E">Linux</text>
+  <path d="M 144.0 418 V 446" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="60" y="520" width="168" height="46" rx="8" fill="#B7C5D2" stroke="#8A9AA8" stroke-width="1.2"/>
+  <text x="144.0" y="548.4" text-anchor="middle" font-size="15" font-weight="500" fill="#16232E">NGINX</text>
+  <path d="M 144.0 492 V 520" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="60" y="594" width="168" height="46" rx="8" fill="#B7C5D2" stroke="#8A9AA8" stroke-width="1.2"/>
+  <text x="144.0" y="622.4" text-anchor="middle" font-size="15" font-weight="500" fill="#16232E">Docker</text>
+  <path d="M 144.0 566 V 594" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="60" y="668" width="168" height="46" rx="8" fill="#B7C5D2" stroke="#8A9AA8" stroke-width="1.2"/>
+  <text x="144.0" y="696.4" text-anchor="middle" font-size="15" font-weight="500" fill="#16232E">Kubernetes</text>
+  <path d="M 144.0 640 V 668" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="60" y="742" width="168" height="46" rx="8" fill="#B7C5D2" stroke="#8A9AA8" stroke-width="1.2"/>
+  <text x="144.0" y="770.4" text-anchor="middle" font-size="15" font-weight="500" fill="#16232E">Helm</text>
+  <path d="M 144.0 714 V 742" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="60" y="816" width="168" height="46" rx="8" fill="#B7C5D2" stroke="#8A9AA8" stroke-width="1.2"/>
+  <text x="144.0" y="844.4" text-anchor="middle" font-size="15" font-weight="500" fill="#16232E">Ansible</text>
+  <path d="M 144.0 788 V 816" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="60" y="890" width="168" height="46" rx="8" fill="#B7C5D2" stroke="#8A9AA8" stroke-width="1.2"/>
+  <text x="144.0" y="918.4" text-anchor="middle" font-size="15" font-weight="500" fill="#16232E">AWS</text>
+  <path d="M 144.0 862 V 890" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="340" y="378" width="210" height="44" rx="8" fill="#CFC5A8" stroke="#A79C7E" stroke-width="1.2"/>
+  <text x="445.0" y="405.4" text-anchor="middle" font-size="15" font-weight="500" fill="#241F12">AWS-Concepts</text>
+  <rect x="340" y="500" width="210" height="44" rx="8" fill="#CFC5A8" stroke="#A79C7E" stroke-width="1.2"/>
+  <text x="445.0" y="527.04" text-anchor="middle" font-size="14" font-weight="500" fill="#241F12">Kubernetes-Concepts</text>
+  <rect x="340" y="596" width="210" height="44" rx="8" fill="#CFC5A8" stroke="#A79C7E" stroke-width="1.2"/>
+  <text x="445.0" y="623.4" text-anchor="middle" font-size="15" font-weight="500" fill="#241F12">HAProxy</text>
+  <rect x="340" y="666" width="210" height="44" rx="8" fill="#CFC5A8" stroke="#A79C7E" stroke-width="1.2"/>
+  <text x="445.0" y="693.4" text-anchor="middle" font-size="15" font-weight="500" fill="#241F12">Observability</text>
+  <rect x="340" y="736" width="210" height="44" rx="8" fill="#CFC5A8" stroke="#A79C7E" stroke-width="1.2"/>
+  <text x="445.0" y="763.4" text-anchor="middle" font-size="15" font-weight="500" fill="#241F12">SonarQube + Trivy</text>
+  <rect x="340" y="806" width="210" height="44" rx="8" fill="#CFC5A8" stroke="#A79C7E" stroke-width="1.2"/>
+  <text x="445.0" y="833.4" text-anchor="middle" font-size="15" font-weight="500" fill="#241F12">Vault</text>
+  <rect x="340" y="876" width="210" height="44" rx="8" fill="#CFC5A8" stroke="#A79C7E" stroke-width="1.2"/>
+  <text x="445.0" y="903.4" text-anchor="middle" font-size="15" font-weight="500" fill="#241F12">Velero</text>
+  <path d="M 462.0 330 V 352 H 306 V 898.0" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M 306 400.0 H 340" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <path d="M 306 522.0 H 340" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <path d="M 306 618.0 H 340" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <path d="M 306 688.0 H 340" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <path d="M 306 758.0 H 340" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <path d="M 306 828.0 H 340" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <path d="M 306 898.0 H 340" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <path d="M 550 400.0 H 596" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round"/>
+  <rect x="618" y="352" width="196" height="42" rx="8" fill="#CFC5A8" stroke="#A79C7E" stroke-width="1.2"/>
+  <text x="716.0" y="378.04" text-anchor="middle" font-size="14" font-weight="500" fill="#241F12">DynamoDB-Locking</text>
+  <path d="M 596 400.0 V 373.0 H 618" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="618" y="410" width="196" height="42" rx="8" fill="#CFC5A8" stroke="#A79C7E" stroke-width="1.2"/>
+  <text x="716.0" y="436.04" text-anchor="middle" font-size="14" font-weight="500" fill="#241F12">RDS+EBS</text>
+  <path d="M 596 400.0 V 431.0 H 618" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="602" y="480" width="212" height="42" rx="8" fill="#CFC5A8" stroke="#A79C7E" stroke-width="1.2"/>
+  <text x="708.0" y="506.04" text-anchor="middle" font-size="14" font-weight="500" fill="#241F12">Pod-Types</text>
+  <rect x="602" y="538" width="212" height="42" rx="8" fill="#CFC5A8" stroke="#A79C7E" stroke-width="1.2"/>
+  <text x="708.0" y="564.04" text-anchor="middle" font-size="14" font-weight="500" fill="#241F12">Container-Types</text>
+  <rect x="602" y="596" width="212" height="42" rx="8" fill="#CFC5A8" stroke="#A79C7E" stroke-width="1.2"/>
+  <text x="708.0" y="622.04" text-anchor="middle" font-size="14" font-weight="500" fill="#241F12">Ingress</text>
+  <rect x="602" y="654" width="212" height="42" rx="8" fill="#CFC5A8" stroke="#A79C7E" stroke-width="1.2"/>
+  <text x="708.0" y="680.04" text-anchor="middle" font-size="14" font-weight="500" fill="#241F12">Network-Policy</text>
+  <rect x="602" y="712" width="212" height="42" rx="8" fill="#CFC5A8" stroke="#A79C7E" stroke-width="1.2"/>
+  <text x="708.0" y="738.04" text-anchor="middle" font-size="14" font-weight="500" fill="#241F12">Kubeadm-vs-EKS</text>
+  <path d="M 550 522.0 H 580" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M 580 501.0 V 733.0" fill="none" stroke="#DCE4EA" stroke-width="1.8"/>
+  <path d="M 580 501.0 H 602" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <path d="M 580 559.0 H 602" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <path d="M 580 617.0 H 602" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <path d="M 580 675.0 H 602" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <path d="M 580 733.0 H 602" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="846" y="266" width="198" height="50" rx="8" fill="#B7C5D2" stroke="#8A9AA8" stroke-width="1.2"/>
+  <text x="945.0" y="296.4" text-anchor="middle" font-size="15" font-weight="500" fill="#16232E">Linux Admin I</text>
+  <rect x="846" y="348" width="198" height="50" rx="8" fill="#B7C5D2" stroke="#8A9AA8" stroke-width="1.2"/>
+  <text x="945.0" y="378.4" text-anchor="middle" font-size="15" font-weight="500" fill="#16232E">Linux Admin II</text>
+  <path d="M 945.0 212 V 266" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <path d="M 945.0 316 V 348" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="1168" y="266" width="284" height="50" rx="8" fill="#B7C5D2" stroke="#8A9AA8" stroke-width="1.2"/>
+  <text x="1310.0" y="296.4" text-anchor="middle" font-size="15" font-weight="500" fill="#16232E">1. Intro to OpenShift</text>
+  <path d="M 1310.0 212 V 266" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="1168" y="342" width="284" height="50" rx="8" fill="#B7C5D2" stroke="#8A9AA8" stroke-width="1.2"/>
+  <text x="1310.0" y="372.4" text-anchor="middle" font-size="15" font-weight="500" fill="#16232E">2. Authentication &#38; Authorization</text>
+  <path d="M 1310.0 316 V 342" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="1168" y="418" width="284" height="50" rx="8" fill="#B7C5D2" stroke="#8A9AA8" stroke-width="1.2"/>
+  <text x="1310.0" y="448.4" text-anchor="middle" font-size="15" font-weight="500" fill="#16232E">3. Install</text>
+  <path d="M 1310.0 392 V 418" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="1168" y="494" width="284" height="50" rx="8" fill="#B7C5D2" stroke="#8A9AA8" stroke-width="1.2"/>
+  <text x="1310.0" y="524.4" text-anchor="middle" font-size="15" font-weight="500" fill="#16232E">4. Permission &#38; Role</text>
+  <path d="M 1310.0 468 V 494" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="1168" y="570" width="284" height="50" rx="8" fill="#B7C5D2" stroke="#8A9AA8" stroke-width="1.2"/>
+  <text x="1310.0" y="600.4" text-anchor="middle" font-size="15" font-weight="500" fill="#16232E">5. Create Users</text>
+  <path d="M 1310.0 544 V 570" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="1168" y="646" width="284" height="50" rx="8" fill="#B7C5D2" stroke="#8A9AA8" stroke-width="1.2"/>
+  <text x="1310.0" y="676.4" text-anchor="middle" font-size="15" font-weight="500" fill="#16232E">6. CLI &#38; GUI</text>
+  <path d="M 1310.0 620 V 646" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="1168" y="722" width="284" height="50" rx="8" fill="#B7C5D2" stroke="#8A9AA8" stroke-width="1.2"/>
+  <text x="1310.0" y="752.4" text-anchor="middle" font-size="15" font-weight="500" fill="#16232E">7. Routes</text>
+  <path d="M 1310.0 696 V 722" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="1168" y="798" width="284" height="50" rx="8" fill="#B7C5D2" stroke="#8A9AA8" stroke-width="1.2"/>
+  <text x="1310.0" y="828.4" text-anchor="middle" font-size="15" font-weight="500" fill="#16232E">8. Limit Range</text>
+  <path d="M 1310.0 772 V 798" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="1168" y="874" width="284" height="50" rx="8" fill="#B7C5D2" stroke="#8A9AA8" stroke-width="1.2"/>
+  <text x="1310.0" y="904.4" text-anchor="middle" font-size="15" font-weight="500" fill="#16232E">9. Project Template</text>
+  <path d="M 1310.0 848 V 874" fill="none" stroke="#DCE4EA" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#a)"/>
+  <rect x="60" y="962" width="22" height="16" rx="4" fill="#2F5B84" stroke="#8FBEE4" stroke-width="1.2"/>
+  <text x="92" y="975" font-size="14" fill="#DCE4EA">top-level directory</text>
+  <rect x="310" y="962" width="22" height="16" rx="4" fill="#3F6B4E" stroke="#9CCFAE" stroke-width="1.2"/>
+  <text x="342" y="975" font-size="14" fill="#DCE4EA">learning track</text>
+  <rect x="560" y="962" width="22" height="16" rx="4" fill="#B7C5D2" stroke="#8A9AA8" stroke-width="1.2"/>
+  <text x="592" y="975" font-size="14" fill="#DCE4EA">sequential module</text>
+  <rect x="810" y="962" width="22" height="16" rx="4" fill="#CFC5A8" stroke="#A79C7E" stroke-width="1.2"/>
+  <text x="842" y="975" font-size="14" fill="#DCE4EA">tool / concept</text>
+    </svg>
+    
