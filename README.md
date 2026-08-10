@@ -32,56 +32,19 @@ The diagram below is a **knowledge map**, not an application architecture. It mi
 real folder tree: three top-level domains, and inside the main one, two different kinds of
 learning — a sequential path, and a non-linear set of concepts that grew out of real work.
 
-```mermaid
-%%{init: {"flowchart": {"curve": "basis", "nodeSpacing": 22, "rankSpacing": 42}, "themeVariables": {"lineColor": "#8FA4B8"}}}%%
-flowchart TD
-    ROOT["<b>Alnaqib's Journey</b>"]
-    ROOT --> DL["<b>DevOps-Learning</b>"]
-    ROOT --> LX["<b>Linux</b>"]
-    ROOT --> OS["<b>OpenShift</b>"]
-
-    DL --> T1["<b>1-DevOps</b>"]
-    DL --> T2["<b>2-DevOps-Tools<br/>-and-Concepts</b>"]
-
-    T1 --> A1["Intro"] --> A2["Linux"] --> A3["NGINX"] --> A4["Docker"] --> A5["Kubernetes"] --> A6["Helm"] --> A7["Ansible"] --> A8["AWS"]
-
-    T2 --> B1["AWS-Concepts"]
-    T2 --> B2["Kubernetes-Concepts"]
-    T2 --> B3["HAProxy"]
-    T2 --> B4["Observability"]
-    T2 --> B5["SonarQube + Trivy"]
-    T2 --> B6["Vault"]
-    T2 --> B7["Velero"]
-
-    B1 --> B1a["DynamoDB-Locking"]
-    B1 --> B1b["RDS+EBS"]
-    B2 --> B2a["Pod-Types"]
-    B2 --> B2b["Container-Types"]
-    B2 --> B2c["Ingress"]
-    B2 --> B2d["Network-Policy"]
-    B2 --> B2e["Kubeadm-vs-EKS"]
-
-    LX --> L1["Linux Admin I"] --> L2["Linux Admin II"]
-
-    OS --> O1["1 Intro"] --> O2["2 Auth"] --> O3["3 Install"] --> O4["4 Permission & Role"] --> O5["5 Create Users"] --> O6["6 CLI & GUI"] --> O7["7 Routes"] --> O8["8 Limit Range"] --> O9["9 Project Template"]
-
-    classDef root   fill:#101B2D,stroke:#4A6C8F,stroke-width:2px,color:#F2F6FA
-    classDef domain fill:#123A63,stroke:#3E8FD0,stroke-width:2px,color:#EAF2FA
-    classDef track  fill:#1E4030,stroke:#5FA377,stroke-width:2px,color:#E8F5EC
-    classDef leaf   fill:#A9B9CC,stroke:#6A7E96,stroke-width:1.5px,color:#12202E
-    classDef tool   fill:#C9BF9F,stroke:#9A8F6E,stroke-width:1.5px,color:#241F12
-    class ROOT root
-    class DL,LX,OS domain
-    class T1,T2 track
-    class A1,A2,A3,A4,A5,A6,A7,A8,L1,L2,O1,O2,O3,O4,O5,O6,O7,O8,O9 leaf
-    class B1,B2,B3,B4,B5,B6,B7,B1a,B1b,B2a,B2b,B2c,B2d,B2e tool
-```
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/architecture.svg">
+    <source media="(prefers-color-scheme: light)" srcset="docs/architecture-muted.svg">
+    <img src="docs/architecture-muted.svg" alt="Alnaqib's Journey — Learning Architecture" width="100%">
+  </picture>
+</p>
 
 ### Reading the diagram
 
 | Colour | Layer | Meaning |
 |---|---|---|
-| Navy | Root and domains | The archive itself, and the three top-level directories. |
+| Dark navy | Root and domains | The archive itself, and the three top-level directories. |
 | Green | Tracks | The two halves of `DevOps-Learning/` — the ordered path and the applied concepts. |
 | Steel blue | Sequential modules | Material read in a fixed order. Arrows are the study order, not just links. |
 | Sand | Tools and concepts | Standalone subjects. No order between them — only nesting where a topic has sub-topics. |
@@ -191,8 +154,9 @@ A few deliberate decisions worth knowing before browsing or cloning:
   files and were rewritten out; keeping them would have kept the repository heavy forever.
 - **Oversized files are blocked at commit time** by a pre-commit hook, so the size problem
   does not come back.
-- **The architecture diagram lives in this file.** It is written in Mermaid, not exported as
-  an image, so adding a new tool means adding one line here — not regenerating a picture.
+- **The architecture diagram is generated, not drawn.** `docs/gen_arch.py` produces both
+  colour variants of `docs/architecture*.svg`, so the diagram stays in sync with the tree
+  instead of drifting from it.
 
 ---
 
