@@ -29,83 +29,27 @@ real work, which means the structure grows over time rather than being frozen at
 ## Learning Architecture
 
 The diagram below is a **knowledge map**, not an application architecture. It mirrors the
-real folder tree of the repository: three top-level domains, and inside the main one, two
-different kinds of learning — a sequential path, and a non-linear set of concepts that grew
-out of real work.
+real folder tree: three top-level domains, and inside the main one, two different kinds of
+learning — a sequential path, and a non-linear set of concepts that grew out of real work.
 
-```mermaid
-%%{init: {"flowchart": {"curve": "basis", "nodeSpacing": 45, "rankSpacing": 55}, "themeVariables": {"lineColor": "#8B9A9F"}}}%%
-flowchart TD
-    ROOT["<b>Alnaqib's Journey</b><br/>A Living Learning Archive"]
-
-    ROOT --> DL["<b>DevOps-Learning/</b><br/>the main learning tree"]
-    ROOT --> LX["<b>Linux/</b><br/>standalone reference library"]
-    ROOT --> OS["<b>OpenShift/</b><br/>enterprise Kubernetes · 9 modules"]
-
-    DL --> PATH["<b>1-DevOps/</b><br/>the path — followed in order"]
-    DL --> CONC["<b>2-DevOps-Tools-and-Concepts/</b><br/>the depth — met through real work"]
-
-    subgraph S1["Sequential Path — foundation to cloud"]
-        direction TB
-        P1["1-Intro-DevOps<br/>culture, workflow, why"]
-        P2["2-Book-Linux-Admi-1<br/>5 modules"]
-        P3["3-NGINX<br/>web server, reverse proxy"]
-        P4["4-Book-Docker<br/>images, containers, registries"]
-        P5["5-k8s<br/>core objects, scheduling, networking"]
-        P6["6-Helm<br/>packaging and releases"]
-        P7["7-Ansible<br/>configuration management"]
-        P8["8-cloud_AWS<br/>compute, storage, networking"]
-        P1 --> P2 --> P3 --> P4 --> P5 --> P6 --> P7 --> P8
-    end
-
-    subgraph S2["Applied Concepts — non-linear, grows with real work"]
-        direction TB
-        C1["AWS-Concepts<br/>DynamoDB Locking · RDS + EBS"]
-        C2["Kubernetes-Concepts<br/>Pod Types · Container Types · Ingress<br/>Network Policy · Kubeadm vs EKS"]
-        C3["HAProxy<br/>load balancing"]
-        C4["Observability<br/>metrics, logs, monitoring stack"]
-        C5["SonarQube and Trivy<br/>code quality and image scanning"]
-        C6["Vault<br/>secrets management"]
-        C7["Velero<br/>cluster backup and restore"]
-        C1 ~~~ C2 ~~~ C3 ~~~ C4 ~~~ C5 ~~~ C6 ~~~ C7
-    end
-
-    subgraph S3["Linux Administration"]
-        direction TB
-        L1["1-Book-Linux-Admi-1"]
-        L2["2-Book-Linux-Admi-2"]
-        L1 ~~~ L2
-    end
-
-    PATH --> S1
-    CONC --> S2
-    LX --> S3
-
-    classDef root   fill:#4F5D63,stroke:#333F44,stroke-width:2px,color:#F2F5F4
-    classDef domain fill:#63798A,stroke:#41535F,stroke-width:2px,color:#F4F7F9
-    classDef track  fill:#7B8B6F,stroke:#54604B,stroke-width:2px,color:#F6F8F2
-    classDef leafA  fill:#94A7B2,stroke:#5E7280,stroke-width:1.5px,color:#1D282E
-    classDef leafB  fill:#ADB09B,stroke:#767A63,stroke-width:1.5px,color:#212418
-
-    class ROOT root
-    class DL,LX,OS domain
-    class PATH,CONC track
-    class P1,P2,P3,P4,P5,P6,P7,P8,L1,L2 leafA
-    class C1,C2,C3,C4,C5,C6,C7 leafB
-
-    style S1 fill:none,stroke:#8AA0AC,stroke-width:1.5px,stroke-dasharray:5 4,color:#7E939F
-    style S2 fill:none,stroke:#A3A68F,stroke-width:1.5px,stroke-dasharray:5 4,color:#8C8F79
-    style S3 fill:none,stroke:#8AA0AC,stroke-width:1.5px,stroke-dasharray:5 4,color:#7E939F
-```
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/architecture.svg">
+    <source media="(prefers-color-scheme: light)" srcset="docs/architecture-muted.svg">
+    <img src="docs/architecture-muted.svg" alt="Alnaqib's Journey — Learning Architecture" width="100%">
+  </picture>
+</p>
 
 ### Reading the diagram
 
-| Layer | Meaning |
-|---|---|
-| Root | The archive itself — one repository, one continuous journey. |
-| Domains | The three top-level directories at repository root. |
-| Tracks | Inside `DevOps-Learning/`: the ordered path, and the applied-concepts collection. |
-| Nodes | Actual folders on disk. Nothing here is aspirational or planned-only. |
+| Colour | Layer | Meaning |
+|---|---|---|
+| Dark navy | Root and domains | The archive itself, and the three top-level directories. |
+| Green | Tracks | The two halves of `DevOps-Learning/` — the ordered path and the applied concepts. |
+| Steel blue | Sequential modules | Material read in a fixed order. Arrows are the study order, not just links. |
+| Sand | Tools and concepts | Standalone subjects. No order between them — only nesting where a topic has sub-topics. |
+
+Every box is an actual directory or module on disk. Nothing in the diagram is planned-only.
 
 The two tracks exist for a reason. `1-DevOps/` is **linear** — each folder builds on the one
 before it, and the numbering is the study order. `2-DevOps-Tools-and-Concepts/` is
@@ -154,6 +98,18 @@ Alnaqib-s-Journey/
 └── OpenShift/                           # 9 sequential modules
 ```
 
+The `OpenShift/` track is nine numbered modules, read in order:
+
+1. Intro to OpenShift
+2. Authentication and Authorization
+3. Install
+4. Permission and Role
+5. Create Users
+6. CLI and GUI
+7. Routes
+8. Limit Range
+9. Project Template
+
 **Current size:** 41 directories, 61 files.
 
 ---
@@ -198,6 +154,9 @@ A few deliberate decisions worth knowing before browsing or cloning:
   files and were rewritten out; keeping them would have kept the repository heavy forever.
 - **Oversized files are blocked at commit time** by a pre-commit hook, so the size problem
   does not come back.
+- **The architecture diagram is generated, not drawn.** `docs/gen_arch.py` produces both
+  colour variants of `docs/architecture*.svg`, so the diagram stays in sync with the tree
+  instead of drifting from it.
 
 ---
 
